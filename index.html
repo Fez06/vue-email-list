@@ -7,16 +7,26 @@
     <title>Document</title>
     <!-- css -->
     <link rel="stylesheet" href="style.css">
+    <!-- Axios -->
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
 </head>
 <body>
     <div id="App">
         <main>
-
+            <div class="ulBox">
+                <h2>Contacts!</h3>
+                <ul>
+                    <li v-cloak v-for="contact in listaEmail" >
+                        {{contact}}
+                    </li>
+                </ul>
+            </div>
         </main>
     </div>
     <!-- vuejs -->
     <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
     <!-- js -->
     <script src="main.js"></script>
+    <!-- https://flynn.boolean.careers/exercises/api/random/mail -->
 </body>
 </html>
